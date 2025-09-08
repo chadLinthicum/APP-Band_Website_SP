@@ -178,6 +178,9 @@ p {
   text-decoration: none !important;
   color: white;
 }
+#Home_Text p {
+  font-size: 1.5rem;
+}
 #Music_Symbols_Container {
   display: flex;
   gap: 2rem;
