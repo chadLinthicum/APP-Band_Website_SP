@@ -98,15 +98,14 @@ p {
 }
 #About_Container h4 {
   margin: 0.5rem;
-  color: rgb(173, 188, 85);
+  color: rgb(233, 188, 51);
 }
 #About_Container p {
   margin-top: 0;
 }
 #Band_Logo_Home {
-  width: 12.5rem;
-  border-radius: 50%;
-  /* border: 0.25rem black solid; */
+  width: 75%;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
   border: 7.5px solid transparent;
 }
@@ -143,9 +142,6 @@ p {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-#Home_Container {
-  padding-top: 15px;
-}
 #Contact_Container,
 #Home_Container,
 #Music_Container,
@@ -164,7 +160,7 @@ p {
 #Music_Container,
 #Subscribe_Container,
 #Bottom_Container {
-  background-color: rgba(171, 194, 112, 0.15);
+  background-color: rgba(243, 199, 3, 0.185);
 }
 #Bottom_Container {
   padding-bottom: 30px;
@@ -191,7 +187,11 @@ p {
   height: 22px;
   white-space: nowrap;
 }
-
+#Members_Image {
+  width: 80%;
+  border-radius: 25px;
+  border: rgba(128, 128, 128, 0.486) solid 4px;
+}
 #Tour_Container span {
   font-size: larger;
   font-weight: bold;
@@ -237,7 +237,7 @@ p {
   box-shadow: 1.5px 1.5px #000000;
 }
 .form-group button {
-  background-color: #d89488;
+  background-color: rgb(233, 188, 51);
   width: 80px;
 }
 #Legal_List {
@@ -327,13 +327,13 @@ p {
   background: linear-gradient(
     to right,
     black,
-    rgb(46, 46, 46),
-    #d98a86,
-    #9b9b35,
+    rgb(107, 86, 24),
+    rgb(233, 188, 51),
+    rgba(243, 199, 3, 0.185),
     rgb(150, 150, 150),
-    #9b9b35,
-    #d98a86,
-    rgb(46, 46, 46),
+    rgba(243, 199, 3, 0.185),
+    rgb(233, 188, 51),
+    rgb(107, 86, 24),
     black
   );
   background-size: 100% 100%;

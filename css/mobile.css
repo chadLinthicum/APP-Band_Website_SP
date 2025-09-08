@@ -40,7 +40,7 @@ p {
   transition-duration: 550ms;
 }
 #Band_Logo_Nav {
-  width: 6.5rem;
+  width: 5.5rem;
   margin-right: 1%;
   margin-top: 8%;
 }
@@ -54,11 +54,31 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+
 #Home_Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  position: relative; /* Make the container a positioning context */
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-image: url("../assets/cover_2.jpg"); /* Your image path */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+#Home_Container::before {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute; /* Position it absolutely within the container */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  bottom: 0; /* Align to the bottom */
+  background-color: rgba(0, 0, 0, 0.8); /* Blue overlay with 50% opacity */
+  z-index: 1; /* Ensure it sits above the background image */
+}
+
+#Home_Container > * {
+  position: relative; /* Position child elements above the overlay */
+  z-index: 2; /* Ensure child elements are above the overlay */
 }
 #Marquee {
   animation: move-rtl 17000ms linear infinite;

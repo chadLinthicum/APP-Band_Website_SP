@@ -1,5 +1,5 @@
 nav a {
-  color: #d89488;
+  color: rgb(233, 188, 51);
 }
 nav ul {
   font-size: 1.5em;
@@ -14,6 +14,33 @@ p {
 #About_Container p {
   max-width: 60vw;
 }
+
+#Home_Container {
+  position: relative; /* Make the container a positioning context */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("../assets/cover_2.jpg"); /* Your image path */
+  background-size: auto 100%; /* Adjust width to auto for repeat */
+  background-position: center; /* Center the image vertically */
+  background-repeat: repeat-x; /* Repeat the image horizontally */
+}
+
+#Home_Container::before {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute; /* Position it absolutely within the container */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  bottom: 0; /* Align to the bottom */
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay with 75% opacity */
+  z-index: 1; /* Ensure it sits above the background image */
+}
+
+#Home_Container > * {
+  position: relative; /* Position child elements above the overlay */
+  z-index: 2; /* Ensure child elements are above the overlay */
+}
+
 #About_Container,
 #Contact_Container,
 #Home_Container,
@@ -76,7 +103,8 @@ p {
   transition: border 0.25s ease;
 }
 nav a:hover {
-  color: #fccac1;
+  color: rgb(107, 86, 24);
+  color: rgb(233, 188, 51);
   transition: color 0.25s ease;
   text-decoration: underline !important;
 }
@@ -89,7 +117,7 @@ nav a:hover {
   transition: color 0.25s ease;
 }
 .form-group button:hover {
-  background-color: #a67268;
+  background-color: rgb(107, 86, 24);
   transition: background-color 0.25s ease;
 }
 #closeBtnImage:hover {
