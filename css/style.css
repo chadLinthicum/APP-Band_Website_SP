@@ -183,7 +183,7 @@ p {
 }
 #Music_Symbols_Container {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   padding: 0.5rem 0;
 }
 #Marquee {

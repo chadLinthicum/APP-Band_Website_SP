@@ -119,6 +119,7 @@ p {
 #Nav_Social_Bottom {
   display: flex;
   align-items: center;
+  gap: 1rem;
   filter: invert(1);
 }
 #Logo_Min {
@@ -131,7 +132,6 @@ p {
   width: 80%;
   height: 190px;
   border-radius: 1rem;
-  margin-bottom: 12px;
   border: 2.5px solid black;
   /* box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
   border: 7.5px solid transparent; */
